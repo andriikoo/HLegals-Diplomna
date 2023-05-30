@@ -1,0 +1,45 @@
+@use "../../../presets" as *;
+
+.about-header {
+  &__grid {
+    position: relative;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    gap: $gap;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    grid-area: teamlogo;
+
+    &-image,
+    &-slash,
+    &-slashp {
+      object-fit: contain;
+    }
+  }
+
+  &__menu {
+    grid-area: teammenu;
+  }
+
+  &__actions {
+    grid-area: teamactions;
+  }
+
+  &__title {
+    color: #323264;
+
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 45px;
+
+  }
+}

@@ -1,0 +1,47 @@
+@use "../../../presets" as *;
+
+.services-header {
+  position: relative;
+
+
+  &__grid {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: grid;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    grid-area: servlogo;
+
+    &-image,
+    &-slash,
+    &-slashp {
+      object-fit: contain;
+    }
+  }
+
+  &__menu {
+    grid-area: servmenu;
+  }
+
+  &__actions {
+    grid-area: servactions;
+  }
+
+  &__title {
+    color: #fff;
+
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+}
+

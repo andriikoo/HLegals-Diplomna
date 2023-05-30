@@ -1,0 +1,96 @@
+@use "../../../presets" as *;
+
+.services {
+  position: relative;
+
+  padding-top: 180px;
+  padding-bottom: 80px;
+
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient($bg-gradient4);
+  }
+
+  &::before {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: 20px;
+    left: 20px;
+
+    height: 10px;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background-color: $color-grey-text;
+  }
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    right: 40px;
+    left: 40px;
+
+    height: 20px;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background-color: $color-grey-separator;
+  }
+
+  &__page-link {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    opacity: 0.5;
+    color: $color-white;
+
+    font-size: 14px;
+
+    &__img {
+      position: relative;
+      top: 0.9px;
+      left: 5px;
+    }
+  }
+
+  &__title {
+    background: linear-gradient(90.13deg, #f0145a 1%, #ef8080 80%);
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    font-size: 42px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__grid {
+    display: grid;
+
+    gap: 40px;
+  }
+
+
+
+.service-item {
+  display: grid;
+  align-items: center;
+
+  gap: 10px;
+  grid-template-rows: auto auto 1fr;
+
+  &__title {
+    color: $color-active;
+
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  &__description {
+    color: $color-white;
+
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

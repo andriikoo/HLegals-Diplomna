@@ -1,0 +1,82 @@
+@use "../../../presets" as *;
+$size: 16px;
+
+.slider {
+  display: flex;
+
+  &__headers {
+    position: relative;
+
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 2;
+
+    gap: $gap;
+  }
+
+  &__header {
+    position: relative;
+
+    user-select: none;
+
+    color: $color-grey-text;
+
+    font-family: "TT Norms";
+
+    &.active {
+      background-clip: text;
+    }
+
+    &__notes {
+      display: flex;
+      align-items: center;
+      flex-basis: 0;
+      flex-grow: 3;
+
+      color: $color-white;
+    }
+
+    &__note {
+      position: absolute;
+      z-index: 9999;
+
+      opacity: 0;
+
+      &.active {
+        position: static;
+        z-index: inherit;
+
+        opacity: 1;
+      }
+    }
+
+    &__title {
+      margin-bottom: $gap;
+    }
+
+    &__description {
+      line-height: 1.43;
+    }
+
+    &__indicators {
+      display: flex;
+      justify-content: center;
+
+      gap: 14px;
+    }
+
+    &__indicator {
+      width: $size;
+      height: $size;
+
+      opacity: 0.2;
+      border-radius: $size * 0.5;
+      background-color: $color-active;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

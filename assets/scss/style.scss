@@ -1,0 +1,33 @@
+
+@use "common";
+@use "presets" as *;
+
+
+@use "../scss/pages/home/header";
+
+@use "../scss/pages/home/experience";
+@use "../scss/pages/home/services";
+@use "../scss/pages/home/team";
+@use "../scss/pages/home/cases";
+@use "../scss/pages/home/clients";
+@use "../scss/pages/home/publications";
+
+
+@use "../scss/pages/home/footer";
+
+
+
+@use "../scss/pages/team/team-header";
+@use "../scss/pages/team/team-members";
+
+@use "../scss/pages/services/services-header";
+@use "../scss/pages/services/services-main";
+
+@use "../scss/pages/about/about-header";
+@use "../scss/pages/about/about-main";
+
+@use "../scss/pages/contacts/contacts-header";
+@use "../scss/pages/contacts/contacts-main";
+
+@use "../scss/pages/publications/publications-header";
+@use "../scss/pages/publications/publications-main";

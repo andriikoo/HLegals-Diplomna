@@ -1,0 +1,78 @@
+@use "../../../presets" as *;
+
+.members {
+  padding-bottom: 60px;
+
+  &__header {
+    max-width: 864px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 42px;
+    line-height: 50px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 40px;
+  }
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  max-width: 413px;
+
+  &__photo {
+    display: flex;
+
+    max-width: 413px;
+    height: auto;
+  }
+
+  &__image {
+    width: 100%;
+
+    object-fit: contain;
+  }
+
+  &__description {
+    display: grid;
+    align-items: flex-start;
+
+    padding-top: 20px;
+
+    grid-template-areas:
+      "teamname teambutton"
+      "teamposition teambutton";
+    grid-template-columns: auto 32px;
+
+    &-name {
+      color: #323264;
+
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21px;
+
+      &-position {
+        color: #b3b3ba;
+
+        font-size: 16px;
+        line-height: 22px;
+
+        grid-area: teamposition;
+      }
+
+      &-button {
+        grid-area: teambutton;
+      }
+    }
+  }
+}

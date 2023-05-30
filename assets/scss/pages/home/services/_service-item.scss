@@ -1,0 +1,24 @@
+@use "../../../presets" as *;
+
+.service-item {
+  display: grid;
+  align-items: center;
+
+  gap: 10px;
+  grid-template-rows: auto auto 1fr;
+
+  &__title {
+
+    color: $color-active;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  &__description {
+    color: $color-white;
+
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

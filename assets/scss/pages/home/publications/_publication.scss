@@ -1,0 +1,61 @@
+@use "../../../presets" as *;
+
+.publication {
+  &__item {
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    &-image {
+      display: block;
+
+      width: 100%;
+
+      border-radius: 8px 8px 0 0;
+
+      object-fit: cover;
+    }
+
+    &-title {
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+
+      color: #24a3ff;
+
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &-title > a {
+      color: #24a3ff;
+    }
+
+    &-date {
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-left: 20px;
+      padding-bottom: 20px;
+
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #b3b3ba;
+
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14px;
+    }
+
+    &-description {
+      margin-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+
+      color: #000000;
+
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

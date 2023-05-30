@@ -1,0 +1,71 @@
+@use "../../../presets" as *;
+
+
+.services-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+
+  &__languages {
+    display: flex;
+
+    letter-spacing: 1px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    gap: 2px;
+  }
+
+  &__language-link {
+    display: block;
+
+    padding: 6px 6px 5px 7px;
+
+    border-radius: 8px;
+    &.active {
+      color: #ffffff;
+      background-color: $color-accent;
+    }
+  }
+
+
+  &__phone-url {
+    white-space: nowrap;
+
+    font-weight: 700;
+  }
+
+}
+
+.services-actions__locations-url {
+  text-align: right;
+
+  color: #fff;
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.services-actions__phone-url {
+  text-align: right;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.services-actions__language-link {
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+

@@ -1,0 +1,69 @@
+@use "../../../presets" as *;
+
+.publications {
+  position: relative;
+
+  overflow: hidden;
+
+  padding-bottom: 40px;
+
+  background-color: #f5f5fa;
+
+  &__header {
+    &-link {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      color: #24a3ff;
+
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 17px;
+    }
+
+    &-img {
+      position: relative;
+      top: 0.9px;
+      left: 5px;
+    }
+
+    &-title {
+      background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 50px;
+    }
+
+    &__items {
+      column-count: 3;
+      column-gap: 40px;
+    }
+
+    &__actions {
+      position: absolute;
+    }
+
+    &__button {
+      display: block;
+
+      min-width: 250px;
+      min-height: 50px;
+      margin: 0 auto;
+      padding: 3px;
+
+      cursor: pointer;
+      text-align: center;
+
+      color: #ffffff;
+      border: 1px solid #24a3ff;
+      border-radius: 12px;
+      background-color: #24a3ff;
+      box-shadow: 0 0 20px rgb(36 163 255 / 50%);
+
+      font-weight: 700;
+    }
+  }
+}

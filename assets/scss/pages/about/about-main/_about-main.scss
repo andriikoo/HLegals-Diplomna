@@ -1,0 +1,139 @@
+@use "../../../presets" as *;
+
+$size: 16px;
+
+.about-main {
+  position: relative;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  &__title {
+    font-size: 42px;
+    line-height: 50px;
+    background: linear-gradient(90.13deg, #f0145a 40%, #ef8080 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  &__description {
+    font-size: 21px;
+    line-height: 30px;
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantage {
+  padding-top: 15px;
+  &__description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #323264;
+  }
+}
+
+.banner {
+  background-image: url(../../../../img/banner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 20px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 80px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 113px;
+
+    letter-spacing: 63px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+    text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
+  }
+}
+
+.quality {
+
+
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-description {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+
+  &__title {
+    display: flex;
+  
+    font-size: 42px;
+    line-height: 50px;
+    background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.achievements {
+  background-color: #f5f5fa;
+  border-radius: 12px 12px 0 0;
+
+  &__title {
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    padding: 30px;
+  }
+
+  &__grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-image {
+      width: 100%;
+    }
+  }
+}
+
+.slider {
+  &__indicators--about {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    gap: 14px;
+  }
+
+  &__indicator--about {
+    width: $size;
+    height: $size;
+
+    opacity: 0.2;
+    border-radius: $size * 0.5;
+    background-color: $color-active;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+

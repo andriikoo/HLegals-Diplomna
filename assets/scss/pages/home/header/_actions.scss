@@ -1,0 +1,36 @@
+@use "../../../presets" as *;
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  &__languages {
+    display: flex;
+
+    letter-spacing: 1px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    gap: 2px;
+  }
+
+  &__language-link {
+    display: block;
+
+    padding: 6px 6px 5px 7px;
+
+    border-radius: 8px;
+    &.active {
+      color: $color-white;
+      background-color: $color-accent;
+    }
+  }
+
+  &__phone-url {
+    white-space: nowrap;
+
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,47 @@
+@use "../presets" as *;
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-primary;
+  font-size: 16px;
+}
+
+body {
+  transition: transform 0.25s;
+
+  line-height: 1.2;
+
+  &.active {
+    overflow: hidden;
+
+    transform: translateX(-$mobile-menu-size);
+
+    &::before {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+
+      width: 100vw;
+      height: 100vh;
+
+      content: "";
+
+      background-color: rgba($color-black, 0.5);
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-white;
+}

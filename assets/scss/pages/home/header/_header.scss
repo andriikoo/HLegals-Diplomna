@@ -1,0 +1,83 @@
+@use "../../../presets" as *;
+
+.page-header {
+  position: relative;
+
+  background: linear-gradient($bg-gradient1);
+
+  &::after {
+    z-index: 1;
+
+    content: "";
+
+    background: linear-gradient(to top, $color-primary 0%, transparent 100%);
+  }
+
+  &__grid {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: grid;
+  }
+
+  &__logo {
+    grid-area: logo;
+  }
+
+  &__menu {
+    grid-area: menu;
+  }
+
+  &__actions {
+    grid-area: actions;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    &-image {
+      transform: translateY(30%);
+    }
+
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 100%;
+      max-width: 620px;
+      margin: 0;
+      padding: $gap;
+
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      color: $color-white;
+
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 45px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 2;
+    bottom: $gap;
+    left: 50%;
+
+    cursor: pointer;
+    transform: translateX(-50%);
+  }
+}
